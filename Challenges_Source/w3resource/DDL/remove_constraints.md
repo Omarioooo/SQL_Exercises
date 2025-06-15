@@ -38,6 +38,7 @@ DROP CONSTRAINT dep_FK
 ```
 ___
 > NOTE :-
+> ---
 > ```SQL
 > SELECT [name]
 > FROM sys.foreign_keys
