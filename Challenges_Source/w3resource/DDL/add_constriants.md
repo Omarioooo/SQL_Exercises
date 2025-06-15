@@ -82,3 +82,36 @@ ADD CONSTRAINT categoryID_fk
 FOREIGN KEY (category_id)
 REFERENCES categories(id)
 ```
+___
+
+**5.11) Set a default value of 0 for the "Salary" column.**
+
+```SQL
+ALTER TABLE Employees
+ADD CONSTRAINT default_salary
+DEFAULT 0 FOR Salary
+```
+___
+
+**5.12) Write a SQL query to assign a default value of 0 to the balance column in the accounts table.**
+```SQL
+ALTER TABLE accounts
+ADD CONSTRAINT default_balance
+DEFAULT 0 FOR balance
+```
+___
+
+**5.13) Write a SQL query to set a default value of 'Unknown' for the country column in the addresses table.**
+```SQL
+ALTER TABLE addresses
+ADD CONSTRAINT default_country
+DEFAULT 'Unknown' FOR country
+```
+___
+
+**5.14) Write a SQL query to set a default value of TRUE for the is_active column in the users table.**
+```SQL
+ALTER TABLE users
+ADD CONSTRAINT active_default
+DEFAULT TRUE FOR is_active
+```
