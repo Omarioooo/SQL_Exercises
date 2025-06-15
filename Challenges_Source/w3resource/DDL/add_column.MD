@@ -38,5 +38,4 @@ ___
 ```SQL
 ALTER TABLE products
 ADD discount_rate DECIMAL(8,2)
-
 ```
